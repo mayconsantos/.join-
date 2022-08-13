@@ -1,0 +1,10 @@
+RewriteEngine On
+<IfModule mod_headers.c>    
+    Header set Access-Control-Allow-Origin *
+</IfModule>
+
+DirectoryIndex index.html
+
+RewriteCond %{REQUEST_FILENAME} !-f
+
+
